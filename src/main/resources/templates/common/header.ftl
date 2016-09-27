@@ -7,7 +7,9 @@
         <link href="/css/foundation-icons.css"   type="text/css" rel="stylesheet"  />  
         <link href="/css/jquery-ui-theme.css" rel="stylesheet" type="text/css"/>  
         <link href="/css/style.css" rel="stylesheet" type="text/css"/>  
-        <script src="/js/libs/jquery/dist/jquery.js " type="text/javascript"></script>  
+       
+        <script src="/webjars/jquery/2.2.1/dist/jquery.min.js"  type="text/javascript"></script>  
+        <script src="/webjars/jquery-ui/1.11.4/jquery-ui.min.js"  type="text/javascript"></script>  
         <script src="/js/ui-init.js" type="text/javascript"></script>    
     </head>
     <body>

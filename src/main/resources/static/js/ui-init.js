@@ -57,10 +57,14 @@ $(document).ready(
             });
             /* menu code */
             
-    
+     
+        jQuery.ui.tabs.prototype._isLocal = function() { return true; };
+             $('.tabs').tabs();
         });
         
         function showExplainDialog()
         {
             $('#explainDialog').dialog("open");
         }
+        
+       
