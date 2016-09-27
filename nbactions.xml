@@ -9,7 +9,7 @@
             <goal>spring-boot:run</goal>
         </goals>
         <properties>
-            <run.mainClass>com.dhenton9000.Springmvc-freemarkerApplication</run.mainClass>
+            <run.mainClass>com.dhenton9000.MainApplication</run.mainClass>
         </properties>
     </action>
     <action>
@@ -22,7 +22,7 @@
         </goals>
         <properties>
             <run.jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address}</run.jvmArguments>
-            <run.mainClass>com.dhenton9000.Springmvc-freemarkerApplication</run.mainClass>
+            <run.mainClass>com.dhenton9000.MainApplication</run.mainClass>
             <jpda.listen>true</jpda.listen>
         </properties>
     </action>
