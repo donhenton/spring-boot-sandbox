@@ -24,4 +24,4 @@ run on the main class)
 * logback configured
 * port configured in application.properties
 * freemarker set to use includes (al a tiles)
-
+* use of webjars for javascript dependencies
