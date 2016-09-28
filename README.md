@@ -31,6 +31,5 @@ run on the main class)
 * https://github.com/AlgiersJUG/spring-boot-postgres-sample
 * http://blog.netgloo.com/2014/10/27/using-mysql-in-spring-boot-via-spring-data-jpa-and-hibernate/
 * https://github.com/netgloo/spring-boot-samples
-* uses the sample database in derby provided by Netbeans
 * database data is from https://github.com/donhenton/dbscripts/blob/master/postgres_birt_create.sql
 and https://github.com/donhenton/dbscripts/blob/master/postgres_birt_load.sql
