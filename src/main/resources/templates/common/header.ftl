@@ -30,6 +30,13 @@
                             <li><a href="/db/listCustomers">List Customers</a></li>
                         </ul>
                     </li>
+                    <li><aside>Mappings</aside>
+                        <ul>
+                            <li><a target="_blank" href="/swagger-ui.html">Swagger Docs</a></li> 
+                           <li><a target="_blank" href="/mappings">Actuator Mappings</a></li> 
+                        </ul>
+                    </li>
+                    
                      <li><a href="/">Home</a></li>
                 </ul>    
                    
