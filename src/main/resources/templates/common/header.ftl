@@ -27,6 +27,7 @@
                         <ul>
                             <li><a href="/propertiesDemo">Properties</a></li>
                            <li><a href="/errorDemo">Errors</a></li>
+                            <li><a href="/db/listCustomers">List Customers</a></li>
                         </ul>
                     </li>
                      <li><a href="/">Home</a></li>
