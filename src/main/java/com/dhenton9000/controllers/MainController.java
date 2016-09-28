@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -17,21 +18,36 @@ public class MainController {
     @Value("${spring.profiles.active}")
     private String activeProfiles;
 
-    
-    
     @RequestMapping("/")
     public String home(Model model) {
-        model.addAttribute("appTitle","Spring Boot");
+        model.addAttribute("appTitle", "Spring Boot");
         return "pages/home";
     }
 
     @RequestMapping("/propertiesDemo")
-    public String propertiesDemo( Model model) {
+    public String propertiesDemo(Model model) {
         model.addAttribute("envMessage", getEnvMessage());
         model.addAttribute("activeProfiles", getActiveProfiles());
         model.addAttribute("mySecret", this.getMySecret());
-        log.debug("get a job");
+
         return "pages/propertiesDemo";
+    }
+
+    @RequestMapping("/errorDemo")
+    public String errorDemo(Model model) {
+
+        return "pages/errorDemo";
+    }
+
+    @RequestMapping("/errorPost")
+    public String errorPost(Model model) {
+        if (3 ==3 )
+        {
+          throw new RuntimeException("you got a post error");   
+        }
+        model.addAttribute("error","error");
+        model.addAttribute("message","message");
+        return "error";
     }
 
     /**
