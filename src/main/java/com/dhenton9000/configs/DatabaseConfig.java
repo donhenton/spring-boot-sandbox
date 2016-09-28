@@ -51,7 +51,7 @@ public class DatabaseConfig {
     
     entityManagerFactory.setDataSource(dataSource);
     
-    // Classpath scanning of @Component, @Service, etc annotated class
+    // Classpath scanning of jpa annotated classes
     entityManagerFactory.setPackagesToScan(
         env.getProperty("entitymanager.packagesToScan"));
     
