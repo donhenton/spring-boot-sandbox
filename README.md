@@ -33,3 +33,19 @@ run on the main class)
 * https://github.com/netgloo/spring-boot-samples
 * database data is from https://github.com/donhenton/dbscripts/blob/master/postgres_birt_create.sql
 and https://github.com/donhenton/dbscripts/blob/master/postgres_birt_load.sql
+
+
+## Mappings
+* http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html
+* if spring-boot-starter-actuator is in the pom, various endpoints are available (see above)
+* to view see http://localhost:9000/mappings
+
+
+
+## Swagger
+* http://heidloff.net/article/usage-of-swagger-2-0-in-spring-boot-applications-to-document-apis/
+* Swagger json is at: http://localhost:9000/v2/api-docs?group=rest (the group comes 
+from the MainApplication Docket bean)
+* Swagger UI: http://localhost:9000/swagger-ui.html 
+* the document is mapped by the use of springfox-swagger-ui in the pom file
+
