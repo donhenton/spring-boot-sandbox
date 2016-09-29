@@ -17,6 +17,7 @@ public class ExceptionControllerAdvice {
 	public String exception(Exception exception, Model model){
 		model.addAttribute("error", exception.toString());
                 model.addAttribute("message", exception.getMessage());
+                model.addAttribute("timestamp", (new java.util.Date()).toString());
 		return "error";
 	}
 	

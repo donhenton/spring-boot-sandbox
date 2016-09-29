@@ -4,6 +4,7 @@
 <ul>
     <li>${error}</li>
      <li>${message}</li>
+      <li>${timestamp}</li>
     
 </ul>
 
